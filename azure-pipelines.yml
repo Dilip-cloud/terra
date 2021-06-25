@@ -35,5 +35,5 @@ steps:
     provider: 'aws'
     command: 'apply'
     workingDirectory: './NEW EKS'
-    commandOptions: 'tfplan -auto-approve'
+    commandOptions: '-auto-approve'
     environmentServiceNameAWS: 'terra'
