@@ -17,6 +17,7 @@ steps:
     command: 'init'
     workingDirectory: './NEW EKS'
     backendServiceAWS: 'terra'
+    backendAWSBucketName: 'azurepipeline966'
     backendAWSKey: 'terraform/terrafor.tfstate'
 
 
