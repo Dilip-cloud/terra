@@ -8,9 +8,9 @@ provider "aws" {
 # terraform {
 #   backend "s3" {
 #     # Replace this with your bucket name!
-#     bucket         = "terraform-backend-storage9989"
-#     key            = "global/s3/terraform.tfstate"
-#     region         = "ap-south-1"
+    bucket         = "azurepipeline966"
+    key            = "terraform/terraform.tfstate"
+    region         = "ap-south-1"
 #     # Replace this with your DynamoDB table name!
 #     dynamodb_table = "terraform_locks9989"
 #     encrypt        = true
