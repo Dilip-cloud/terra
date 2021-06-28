@@ -37,3 +37,11 @@ steps:
     workingDirectory: './NEW EKS'
     commandOptions: '-auto-approve'
     environmentServiceNameAWS: 'terra'
+
+- task: TerraformTaskV2@2
+  inputs:
+    provider: 'aws'
+    command: 'apply'
+    workingDirectory: './NEW EKS'
+    commandOptions: '-destroy'
+    environmentServiceNameAWS: 'terra'
