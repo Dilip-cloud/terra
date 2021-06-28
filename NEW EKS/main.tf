@@ -5,8 +5,8 @@ provider "aws" {
   region = "ap-south-1"
 }
 
-# terraform {
-#   backend "s3" {
+ terraform {
+   backend "s3" {
 #     # Replace this with your bucket name!
     bucket         = "azurepipeline966"
     key            = "terraform/terraform.tfstate"
@@ -20,9 +20,9 @@ provider "aws" {
 #     #   aws_s3_bucket.terraform_state_backend,
 #     #   aws_dynamodb_table.terraform_locks
 #     # ]
-#   }
+   }
  
-# }
+ }
 
 module "Network" {
     source = "./Network"
